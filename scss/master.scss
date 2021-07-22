@@ -1,0 +1,560 @@
+/*Alumno: Lucas Nicolussi; Profesor: Darío Ceballos; Tutor: Gonzalo Manoukian-->*/
+$primary-color:#FBFAFA;
+$secondary-color:#333333;
+$highlight-color:darkred;
+$font-family:'Goudy Bookletter 1911', 'Gentium Book Basic', sans-serif;
+$p-font-family: 'Sawarabi Mincho', monospace, sans-serif;
+$font-color-primary:ghostwhite;
+$font-color-secondary: black;
+$night-mode-color:black;
+@import "queries.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+a {
+	text-decoration: none;
+}
+body {
+	text-align: center;
+	background-color:$primary-color;
+}
+header {
+	background-color: $secondary-color;
+	min-width: 100vw;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	font-size: 1rem;
+	* {
+		color: $font-color-primary;
+		padding: 5px;
+		text-decoration: none;
+	}
+}
+.headerWrapper {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: baseline;
+	background-color: $secondary-color;
+}
+.logo {
+	border-radius: 30%;
+}
+.headerNavbar {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	color: $font-color-primary;
+	text-decoration: none;
+	li {
+		font-family: $font-family;
+		list-style-type: none;
+		color: $font-color-primary;
+		text-decoration: none;
+	}
+}
+.nav_bar {
+	text-decoration: none;
+	color: $font-color-primary;
+}
+
+.callToAct {
+	margin: 2.5%; }
+	.callToAct a {
+	  text-decoration: none;
+	  color: black; }
+
+#artGallery {
+	max-width: 90%;
+    margin: auto;
+	overflow: hidden;
+	h1 {
+		width: 90vw;
+	}
+	h2 {
+		width: 90vw;
+	}
+}
+.barsIndexCall {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+}
+h1 {
+	font-size: 2.9rem;
+	font-family: $font-family;
+	overflow: hidden;
+}
+h2 {
+	font-size: 2.9rem;
+	color: $font-color-primary;
+	background-color: $secondary-color;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-family: $font-family;
+	overflow: hidden;
+}
+h4 {
+	font-size: 1rem;
+	font-family: $font-family;
+	overflow: hidden;
+}
+h5 {
+	overflow: hidden;
+}
+section {
+	overflow: hidden;
+}
+ul {
+	font-family: $font-family;
+}
+li {
+	font-family: $font-family;
+	a {
+		&:hover {
+			background-color: $highlight-color;
+			transition: all .8s;
+		}
+	}
+}
+.copyrightStatement {
+	font-family: $font-family;
+	display: block;
+}
+footer {
+	background-color: $secondary-color;
+	margin-top: 1%;
+	* {
+		display: inline-block;
+		color: $font-color-primary;
+		padding: 5px;
+		text-decoration: none;
+	}
+}
+textarea {
+	resize: none;
+}
+.wrapper {
+	max-width: 70%;
+	margin: auto;
+	min-height: 76.5vh;
+}
+p {
+	font-family: $p-font-family;
+    text-align: left;
+	font-weight: 550;
+	line-height: 175%;
+}
+
+.submitButton {
+	color: black;
+}
+#searchMenu {
+	font-family: $font-family;
+}
+.deployableContent {
+	&:hover {
+		.deployableMenu {
+			background-color: $highlight-color;
+			transition: all .8s;
+		}
+	}
+	display: none;
+	position: absolute;
+	background-color: $secondary-color;
+	min-width: 160px;
+	z-index: 1;
+	a {
+		color: $font-color-primary;
+		font-size: 18px;
+		padding: 12px 16px;
+		text-decoration: none;
+		transition: all .8s;		
+		display: block;
+		text-align: left;
+	}
+}
+.deployableMenu {
+	&:hover {
+		.deployableContent {
+			display: block;
+			transition: all .8s;
+		}
+	}
+}
+#firstArticleImg {
+	border-radius: 50%;
+	width: 25%;
+	height: 40%;
+	float: left;
+}
+.button {
+	padding: 0px;
+	margin: 0px;
+	border-radius: 50%;
+	border-color: transparent;
+	display: block;
+	margin: auto;
+}
+.goRaiding {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+#barOne {
+	width: 35%;
+}
+#barTwo {
+	width: 50%;
+	height: 275px;
+}
+.news {
+	margin-bottom: 10%;
+    img {
+	float: left;
+	width: 40%;
+	max-height: 40vh;
+    margin-right: 1%;
+    }
+}
+.gridBook {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#runeList {
+	ul {
+		li {
+			list-style-image: url(icons/norseIcon.png);
+			font-size: 1.25rem;
+		}
+		ul {
+			width: 45%;
+			margin: auto;
+		}
+	}
+	display: flex;
+	width: 100%;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	a {
+		&:hover {
+			background-color: transparent;
+		}
+		text-decoration: none;
+	}
+}
+.separator {
+	margin-top: 2%;
+}
+.paintings {
+	width: 600px;
+	height: 350px;
+}
+.buyBook {
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	margin: 2.5%;
+}
+#seeMoreBooks {
+	margin-bottom: 2.5%;
+}
+figure {
+	img {
+		border: 1px solid gold;
+	}
+	figcaption {
+		color: black;
+		font-style: italic;
+		font-size: 1.25rem;
+		width: 100%;
+        font-family: $font-family;
+	}
+}
+.barList {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	figure {
+		margin-top: 10px;
+	}
+}
+.flexFa {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	img {
+		margin: auto;
+		max-width: 90vw;
+	}
+}
+.fieldset {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	justify-content: space-evenly;
+	align-items: center;
+	textarea {
+		margin-top: 2%;
+	}
+}
+.shadowPop {
+	border-radius: 30%;
+	-webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+.carouselPhoto {
+	max-height: 90vh;
+	max-width: 90vw;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.rpgMain__BookCover {
+    max-width: 100%;
+    max-height: 80vh; }
+
+.zoom {
+	cursor: pointer;
+  }  
+  
+ #artGallery {
+	section {
+		.gallery {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+	}
+}
+
+// BEM Blocks - creé los bloques para alterar el estilo de color, el primer set es para mantener el estilo original brillante y se aplica a <body> y <main>
+// no lo apliqué dado que está a fines de los ejercicios obligatorios, sin embargo, el modo nocturno sí tiene un ejemplo index_nocturno.html
+
+.main-background {
+    background-color: $primary-color;
+    text-align: center;
+    .main-background__header {
+        background-color: $secondary-color;
+    }
+    .main-background__headerWrapper {
+        background-color: $secondary-color;
+        color: $font-color-primary;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: baseline;
+    }
+    .main-background__title {
+        background-color: $primary-color;
+        color: $font-color-secondary;
+    } 
+    .main-background__subtitle {
+        background-color: $secondary-color;
+        color: $font-color-primary;
+    }
+    .main-background__p {
+        color: $font-color-secondary;
+    }
+    .main-background__p-center {
+        text-align: center;
+    }
+    figure figcaption {
+        color: $font-color-secondary;
+    }
+    .main-background__footer {
+        background-color: $secondary-color;
+    }
+}
+
+// BEM modo nocturno
+.main--backgroundBlack {
+        background-color: $night-mode-color;
+        text-align: center;
+    .main--backgroundBlack__header {
+            background-color: $night-mode-color;
+        }
+    .main--backgroundBlack__headerWrapper {
+        background-color: $night-mode-color;
+        color: $font-color-primary;  
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: baseline;
+    } 
+    .main--backgroundBlack__header__deployableContent {
+        &:hover {
+            .deployableMenu {
+                background-color: $highlight-color;
+				transition: all .8s;
+            }
+        }
+        display: none;
+        position: absolute;
+        background-color: $secondary-color;
+        min-width: 160px;
+        z-index: 1;
+        a {
+            color: $font-color-primary;
+            font-size: 18px;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+    }
+    .deployableMenu {
+        &:hover {
+            .deployableContent {
+                display: block;
+				transition: all .8s;
+            }
+        }
+    }
+    .main--backgroundBlack__title {
+        background-color: $night-mode-color;
+        color: $font-color-primary;
+        border: solid 1px ghostwhite;
+    } 
+    .main--backgroundBlack__subtitle {
+        background-color: $night-mode-color;
+        color: $font-color-primary;
+        border: solid 1px ghostwhite;
+    }
+    .main--backgroundBlack__p {
+        color: $font-color-primary;
+    }
+    .main--backgroundBlack__p-center {
+        text-align: center;
+    }
+    figure figcaption {
+        color: $font-color-primary;
+    }
+    .main--backgroundBlack__footer {
+        background-color: $night-mode-color;
+        border-top: solid 1px ghostwhite;
+    }
+    #nightCarousel {
+        background-color: $night-mode-color;
+    }
+}
+// Desafío complementario: Bucle , Mapa, Each
+//MAPA
+$socialMediaHoverColors: (twitter:dodgerblue, pinterest:red, instagram:darkviolet, steam:black, facebook:mediumblue,);
+//EACH
+@each $socialMedia, $hoverColor in $socialMediaHoverColors {
+    .btn--#{$socialMedia} {
+        a {
+			&:hover {
+				background-color: $hoverColor;
+				transition: all .8s;
+			}
+    }
+}
+}
+// BUCLE
+// Tengo 4 queries, la idea es hacer una clase para que las imágenes de una página tengan todas el mismo tamaño, guardando una relación de aspecto
+
+$query: 1;
+
+@while $query < 5 {
+    .imgSize-#{$query} {
+        width: (150 * $query) + px;
+		height: (150 * $query) + px;
+    }
+
+    $query: $query + 1;
+}
+
+// una propuesta de if para darkmode
+$darkMode: false;
+#darkmode:active {
+	$darkmode: true;
+}
+
+@if $darkMode != false {
+    .main--background {
+        background-color: $night-mode-color;
+        text-align: center;
+    .main--background__header {
+            background-color: $night-mode-color;
+        }
+    .main--background__headerWrapper {
+        background-color: $night-mode-color;
+        color: $font-color-primary;  
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: baseline;
+    } 
+    .main--background__header__deployableContent {
+        &:hover {
+            .deployableMenu {
+                background-color: $highlight-color;
+				transition: all .8s;
+            }
+        }
+        display: none;
+        position: absolute;
+        background-color: $secondary-color;
+        min-width: 160px;
+        z-index: 1;
+        a {
+            color: $font-color-primary;
+            font-size: 18px;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+    }
+    .deployableMenu {
+        &:hover {
+            .deployableContent {
+                display: block;
+				transition: all .8s;
+            }
+        }
+    }
+    .main--background__title {
+        background-color: $night-mode-color;
+        color: $font-color-primary;
+        border: solid 1px ghostwhite;
+    } 
+    .main--background__subtitle {
+        background-color: $night-mode-color;
+        color: $font-color-primary;
+        border: solid 1px ghostwhite;
+    }
+    .main--background__p {
+        color: $font-color-primary;
+    }
+    .main--background__p-center {
+        text-align: center;
+    }
+    figure figcaption {
+        color: $font-color-primary;
+    }
+    .main--background__footer {
+        background-color: $night-mode-color;
+        border-top: solid 1px ghostwhite;
+    }
+    #Carousel {
+        background-color: $night-mode-color;
+    }
+}
+} 

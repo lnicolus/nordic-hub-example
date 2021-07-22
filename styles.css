@@ -1,0 +1,566 @@
+@charset "UTF-8";
+/*Alumno: Lucas Nicolussi; Profesor: Darío Ceballos; Tutor: Gonzalo Manoukian-->*/
+@media (min-width: 280px) and (max-width: 640px) {
+  html {
+    font-size: 13px; }
+  .headerWrapper {
+    flex-direction: column; }
+  .headerNavbar {
+    flex-direction: column; }
+  .barsIndexCall a img {
+    max-width: 100%; }
+  .barList a img {
+    max-width: 100%; }
+  #imgHeaderBars {
+    max-width: 100%; }
+  #gridMenu {
+    display: grid;
+    grid-template-areas: "headerLogo headerNavbar headerNavbar" "headerLogo headerNavbar headerNavbar" "searchMenu searchMenu searchMenu";
+    align-items: center; }
+  #headerLogo {
+    grid-area: headerLogo; }
+  #headerNavbar {
+    grid-area: headerNavbar; }
+  #searchMenu {
+    grid-area: searchMenu; }
+  main {
+    min-width: 90vw;
+    max-width: 90vw;
+    margin: auto; }
+  .wrapper {
+    min-width: 90vw;
+    max-width: 90vw;
+    margin: auto; }
+  h1 {
+    font-size: 1.9rem; }
+  h2 {
+    font-size: 1.9rem; }
+  #goRaiding {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+  #runeList {
+    width: 70vw;
+    margin: auto; }
+  .rpgMain__BookCover {
+    max-width: 80%;
+    height: 40vh; }
+  .zoom:active {
+    transform: scale(2); }
+  .news img {
+    float: left;
+    max-height: 70vh;
+    margin-right: 1%;
+    min-width: 70vw; } }
+
+@media (min-width: 641px) and (max-width: 720px) {
+  html {
+    font-size: 15px; }
+  .headerWrapper {
+    max-width: 100%; }
+  .headerNavbar {
+    max-width: 100%; }
+  .barsIndexCall a img {
+    max-width: 100%; }
+  .barList a img {
+    max-width: 100%; }
+  #imgHeaderBars {
+    max-width: 100%; }
+  #gridMenu {
+    display: grid;
+    grid-template-areas: "headerLogo" "headerNavbar" "searchMenu";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 30vh; }
+  #headerLogo {
+    grid-area: headerLogo; }
+  #headerNavbar {
+    grid-area: headerNavbar; }
+  #searchMenu {
+    grid-area: searchMenu; }
+  main {
+    min-width: 90vw;
+    max-width: 90vw;
+    margin: auto; }
+  .wrapper {
+    min-width: 90vw;
+    max-width: 90vw;
+    margin: auto; }
+  #runeList {
+    width: 60vw;
+    margin: auto; }
+  .rpgMain__BookCover {
+    max-width: 100%;
+    height: 60vh; }
+  #offersCarousel {
+    max-height: 50vh; }
+  .zoom:active {
+    transform: scale(2); }
+  .news img {
+    float: left;
+    max-height: 60vh;
+    margin-right: 1%;
+    min-width: 50vw; } }
+
+@media (min-width: 721px) and (max-width: 869px) {
+  html {
+    font-size: 16px; }
+  .rpgMain__BookCover {
+    max-width: 70%;
+    height: 60vh;
+    margin-right: 1%; }
+  .news img {
+    float: left;
+    max-height: 60vh;
+    margin-right: 1%;
+    min-width: 50vw; }
+  .zoom:active {
+    transform: scale(1.5); } }
+
+@media only screen and (min-width: 1200px) {
+  .rpgMain__article {
+    max-width: 100%;
+    min-height: 80vh; }
+  .rpgMain__BookCover {
+    max-width: 60%;
+    float: left;
+    margin-right: 1%; }
+  .zoom:active {
+    transform: scale(1.5); }
+  #artGallery img {
+    max-width: 40vw;
+    min-height: 100%; } }
+
+@-webkit-keyframes shadowPop {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    -webkit-box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+    box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(-8px);
+    transform: translateX(-8px) translateY(-8px); } }
+
+@keyframes shadow-pop-br {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    -webkit-box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+    box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(-8px);
+    transform: translateX(-8px) translateY(-8px); } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto; }
+
+a {
+  text-decoration: none; }
+
+body {
+  text-align: center;
+  background-color: #FBFAFA; }
+
+header {
+  background-color: #333333;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 1rem; }
+  header * {
+    color: ghostwhite;
+    padding: 5px;
+    text-decoration: none; }
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
+  background-color: #333333; }
+
+.logo {
+  border-radius: 30%; }
+
+.headerNavbar {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: ghostwhite;
+  text-decoration: none; }
+  .headerNavbar li {
+    font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+    list-style-type: none;
+    color: ghostwhite;
+    text-decoration: none; }
+
+.nav_bar {
+  text-decoration: none;
+  color: ghostwhite; }
+
+.callToAct {
+  margin: 2.5%; }
+
+.callToAct a {
+  text-decoration: none;
+  color: black; }
+
+#artGallery {
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden; }
+  #artGallery h1 {
+    width: 90vw; }
+  #artGallery h2 {
+    width: 90vw; }
+
+.barsIndexCall {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around; }
+
+h1 {
+  font-size: 2.9rem;
+  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  overflow: hidden; }
+
+h2 {
+  font-size: 2.9rem;
+  color: ghostwhite;
+  background-color: #333333;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  overflow: hidden; }
+
+h4 {
+  font-size: 1rem;
+  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  overflow: hidden; }
+
+h5 {
+  overflow: hidden; }
+
+section {
+  overflow: hidden; }
+
+ul {
+  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif; }
+
+li {
+  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif; }
+  li a:hover {
+    background-color: darkred;
+    transition: all .8s; }
+
+.copyrightStatement {
+  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  display: block; }
+
+footer {
+  background-color: #333333;
+  margin-top: 1%; }
+  footer * {
+    display: inline-block;
+    color: ghostwhite;
+    padding: 5px;
+    text-decoration: none; }
+
+textarea {
+  resize: none; }
+
+.wrapper {
+  max-width: 70%;
+  margin: auto;
+  min-height: 76.5vh; }
+
+p {
+  font-family: "Sawarabi Mincho", monospace, sans-serif;
+  text-align: left;
+  font-weight: 550;
+  line-height: 175%; }
+
+.submitButton {
+  color: black; }
+
+#searchMenu {
+  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif; }
+
+.deployableContent {
+  display: none;
+  position: absolute;
+  background-color: #333333;
+  min-width: 160px;
+  z-index: 1; }
+  .deployableContent:hover .deployableMenu {
+    background-color: darkred;
+    transition: all .8s; }
+  .deployableContent a {
+    color: ghostwhite;
+    font-size: 18px;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: all .8s;
+    display: block;
+    text-align: left; }
+
+.deployableMenu:hover .deployableContent {
+  display: block;
+  transition: all .8s; }
+
+#firstArticleImg {
+  border-radius: 50%;
+  width: 25%;
+  height: 40%;
+  float: left; }
+
+.button {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50%;
+  border-color: transparent;
+  display: block;
+  margin: auto; }
+
+.goRaiding {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; }
+
+#barOne {
+  width: 35%; }
+
+#barTwo {
+  width: 50%;
+  height: 275px; }
+
+.news {
+  margin-bottom: 10%; }
+  .news img {
+    float: left;
+    width: 40%;
+    max-height: 40vh;
+    margin-right: 1%; }
+
+.gridBook {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+#runeList {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: center; }
+  #runeList ul li {
+    list-style-image: url(icons/norseIcon.png);
+    font-size: 1.25rem; }
+  #runeList ul ul {
+    width: 45%;
+    margin: auto; }
+  #runeList a {
+    text-decoration: none; }
+    #runeList a:hover {
+      background-color: transparent; }
+
+.separator {
+  margin-top: 2%; }
+
+.paintings {
+  width: 600px;
+  height: 350px; }
+
+.buyBook {
+  margin: 2.5%; }
+  .buyBook a {
+    text-decoration: none;
+    color: black; }
+
+#seeMoreBooks {
+  margin-bottom: 2.5%; }
+
+figure img {
+  border: 1px solid gold; }
+
+figure figcaption {
+  color: black;
+  font-style: italic;
+  font-size: 1.25rem;
+  width: 100%;
+  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif; }
+
+.barList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center; }
+  .barList figure {
+    margin-top: 10px; }
+
+.flexFa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .flexFa img {
+    margin: auto;
+    max-width: 90vw; }
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center; }
+  .fieldset textarea {
+    margin-top: 2%; }
+
+.shadowPop {
+  border-radius: 30%;
+  -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: shadow-pop-br 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+
+.carouselPhoto {
+  max-height: 90vh;
+  max-width: 90vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.rpgMain__BookCover {
+  max-width: 100%;
+  max-height: 80vh; }
+
+.zoom {
+  cursor: pointer; }
+
+#artGallery section .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start; }
+
+.main-background {
+  background-color: #FBFAFA;
+  text-align: center; }
+  .main-background .main-background__header {
+    background-color: #333333; }
+  .main-background .main-background__headerWrapper {
+    background-color: #333333;
+    color: ghostwhite;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: baseline; }
+  .main-background .main-background__title {
+    background-color: #FBFAFA;
+    color: black; }
+  .main-background .main-background__subtitle {
+    background-color: #333333;
+    color: ghostwhite; }
+  .main-background .main-background__p {
+    color: black; }
+  .main-background .main-background__p-center {
+    text-align: center; }
+  .main-background figure figcaption {
+    color: black; }
+  .main-background .main-background__footer {
+    background-color: #333333; }
+
+.main--backgroundBlack {
+  background-color: black;
+  text-align: center; }
+  .main--backgroundBlack .main--backgroundBlack__header {
+    background-color: black; }
+  .main--backgroundBlack .main--backgroundBlack__headerWrapper {
+    background-color: black;
+    color: ghostwhite;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: baseline; }
+  .main--backgroundBlack .main--backgroundBlack__header__deployableContent {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    min-width: 160px;
+    z-index: 1; }
+    .main--backgroundBlack .main--backgroundBlack__header__deployableContent:hover .deployableMenu {
+      background-color: darkred;
+      transition: all .8s; }
+    .main--backgroundBlack .main--backgroundBlack__header__deployableContent a {
+      color: ghostwhite;
+      font-size: 18px;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left; }
+  .main--backgroundBlack .deployableMenu:hover .deployableContent {
+    display: block;
+    transition: all .8s; }
+  .main--backgroundBlack .main--backgroundBlack__title {
+    background-color: black;
+    color: ghostwhite;
+    border: solid 1px ghostwhite; }
+  .main--backgroundBlack .main--backgroundBlack__subtitle {
+    background-color: black;
+    color: ghostwhite;
+    border: solid 1px ghostwhite; }
+  .main--backgroundBlack .main--backgroundBlack__p {
+    color: ghostwhite; }
+  .main--backgroundBlack .main--backgroundBlack__p-center {
+    text-align: center; }
+  .main--backgroundBlack figure figcaption {
+    color: ghostwhite; }
+  .main--backgroundBlack .main--backgroundBlack__footer {
+    background-color: black;
+    border-top: solid 1px ghostwhite; }
+  .main--backgroundBlack #nightCarousel {
+    background-color: black; }
+
+.btn--twitter a:hover {
+  background-color: dodgerblue;
+  transition: all .8s; }
+
+.btn--pinterest a:hover {
+  background-color: red;
+  transition: all .8s; }
+
+.btn--instagram a:hover {
+  background-color: darkviolet;
+  transition: all .8s; }
+
+.btn--steam a:hover {
+  background-color: black;
+  transition: all .8s; }
+
+.btn--facebook a:hover {
+  background-color: mediumblue;
+  transition: all .8s; }
+
+.imgSize-1 {
+  width: 150px;
+  height: 150px; }
+
+.imgSize-2 {
+  width: 300px;
+  height: 300px; }
+
+.imgSize-3 {
+  width: 450px;
+  height: 450px; }
+
+.imgSize-4 {
+  width: 600px;
+  height: 600px; }
