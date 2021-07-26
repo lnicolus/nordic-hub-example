@@ -225,7 +225,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto;
+  overflow: visible;
   font-size: 0.875em;
 }
 pre code {
@@ -6311,20 +6311,12 @@ textarea.form-control-lg {
   float: none !important;
 }
 
-.overflow-auto {
-  overflow: auto !important;
-}
-
 .overflow-hidden {
   overflow: hidden !important;
 }
 
 .overflow-visible {
   overflow: visible !important;
-}
-
-.overflow-scroll {
-  overflow: scroll !important;
 }
 
 .d-inline {

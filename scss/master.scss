@@ -13,7 +13,6 @@ $night-mode-color:black;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow: auto;
 }
 
 a {
@@ -22,6 +21,8 @@ a {
 body {
 	text-align: center;
 	background-color:$primary-color;
+	overflow-y: scroll;	
+	overflow-x: hidden;
 }
 header {
 	background-color: $secondary-color;
@@ -30,7 +31,7 @@ header {
 	align-items: center;
 	align-content: center;
 	justify-content: center;
-	font-size: 1rem;
+	font-size: 1rem;	
 	* {
 		color: $font-color-primary;
 		padding: 5px;
@@ -42,7 +43,7 @@ header {
 	justify-content: space-between;
 	align-content: center;
 	align-items: baseline;
-	background-color: $secondary-color;
+	background-color: $secondary-color;	
 }
 .logo {
 	border-radius: 30%;
@@ -69,7 +70,8 @@ header {
 	margin: 2.5%; }
 	.callToAct a {
 	  text-decoration: none;
-	  color: black; }
+	  color:ghostwhite;
+	  font-family: $font-family; }
 
 #artGallery {
 	max-width: 90%;
@@ -131,12 +133,12 @@ li {
 }
 footer {
 	background-color: $secondary-color;
-	margin-top: 1%;
+	margin-top: 1%;	
 	* {
 		display: inline-block;
 		color: $font-color-primary;
 		padding: 5px;
-		text-decoration: none;
+		text-decoration: none;		
 	}
 }
 textarea {
@@ -146,6 +148,7 @@ textarea {
 	max-width: 70%;
 	margin: auto;
 	min-height: 76.5vh;
+	overflow: visible;
 }
 p {
 	font-family: $p-font-family;
@@ -558,3 +561,14 @@ $darkMode: false;
     }
 }
 } 
+
+.label {
+	margin-bottom: 2%;
+}
+
+.contactForm {
+	margin-top: 2%;
+}
+.alignCenter {
+	text-align: center;
+}
