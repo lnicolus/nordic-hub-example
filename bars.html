@@ -2,119 +2,154 @@
 <!--La presente página corresponde a promocionar los eventos, festivales, bares y otros lugares de reunión que hayan pagado por promocionarse o sean de importancia-->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <title>All Viking - Lore</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="icons/vikingship.png"
+      type="image favicon"
+    />
+    <meta name="keywords" content="bars, nightlife, Viking" />
+    <meta name="description" content="Find the best viking bars worldwide" />
+    <meta name="classification" content="culture, tourism" />
+    <meta name="robots" content="all, notranslate" />
+    <meta name="author" content="Lucas Nicolussi" />
+    <meta name="copyright" content="Lucas Nicolussi" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta property="og:url" content="www.allviking.com" />
+    <meta property="og:title" content="All Viking - Home" />
+    <meta property="og:image" content="images/ogBars.png" />
+    <meta property="og:site_name" content="Allviking.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Find the best bars worldwide." />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Sawarabi+Mincho&display=swap" rel="stylesheet" />
-  <title>All Viking - Lore</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Goudy+Bookletter+1911&display=swap"
-    rel="stylesheet" />
-  <link rel="shortcut icon" href="icons/vikingship.png" type="image favicon">
-  <meta name="keywords" content="bars, nightlife, Viking">
-  <meta name="description" content="Find the best viking bars worldwide">
-  <meta name="classification" content="culture, tourism">
-  <meta name="robots" content="all, notranslate">
-  <meta name="author" content="Lucas Nicolussi"/>
-  <meta name="copyright" content="Lucas Nicolussi"/>
-  <meta http-equiv="cache-control" content="no-cache"/>
-  <meta property="og:url" content="www.allviking.com">
-  <meta property="og:title" content="All Viking - Home">
-  <meta property="og:image" content="images/ogBars.png">
-  <meta property="og:site_name" content="Allviking.com">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="Find the best bars worldwide.">
-</head>
-
-<body>
-  <header>
-    <div class="headerWrapper" id="gridMenu">
-      <div id="headerLogo">
-        <a href="index.html"><img src="images/logo.jpeg" alt="logo" class="shadowPop" class="logo"/></a>
+  <body>
+    <header>
+      <div class="headerWrapper" id="gridMenu">
+        <div id="headerLogo">
+          <a href="index.html"
+            ><img
+              src="images/logo.jpeg"
+              alt="logo"
+              class="shadowPop"
+              class="logo"
+          /></a>
+        </div>
+        <nav id="headerNavbar">
+          <ul class="headerNavbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="products.html">Browse Products</a></li>
+            <li class="deployableMenu">
+              <a href="bars.html">Go Raiding</a>
+              <div class="deployableContent">
+                <a href="https://valhallayork.com/">Valhalla York (US)</a>
+                <a href="https://mjolner.com.au/">Mjölner (AU)</a>
+                <a href="https://www.facebook.com/valhallabarvikingo"
+                  >Valhalla BA (AR)</a
+                >
+                <a href="https://www.facebook.com/Vinabodtapasbar/"
+                  >Vinabod (UK)</a
+                >
+                <a href="https://www.yelp.com/biz_photos/skol-des-moines"
+                  >Sköl (US)</a
+                >
+              </div>
+            </li>
+            <li class="deployableMenu">
+              <a href="fineart.html">Viking Lore & Art</a>
+              <div class="deployableContent">
+                <a href="fineart.html">Fine Art</a>
+                <a href="allthing.html">Allthing Lore</a>
+              </div>
+            </li>
+            <li><a href="rpgs.html">RPGs</a></li>
+          </ul>
+        </nav>
+        <form id="searchMenu" action="/action_page.php" method="get">
+          <input
+            class="submitButton"
+            type="text"
+            placeholder="Search.."
+            name="search"
+          />
+          <button class="submitButton" type="submit">Submit</button>
+        </form>
       </div>
-      <nav id="headerNavbar">
-        <ul class="headerNavbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="products.html">Browse Products</a></li>
-          <li class="deployableMenu">
-            <a href="bars.html">Go Raiding</a>
-            <div class="deployableContent">
-              <a href="https://valhallayork.com/">Valhalla York (US)</a>
-              <a href="https://mjolner.com.au/">Mjölner (AU)</a>
-              <a href="https://www.facebook.com/valhallabarvikingo">Valhalla BA (AR)</a>
-              <a href="https://www.facebook.com/Vinabodtapasbar/">Vinabod (UK)</a>
-              <a href="https://www.yelp.com/biz_photos/skol-des-moines">Sköl (US)</a>
-            </div>
-          </li>
-          <li class="deployableMenu">
-            <a href="fineart.html">Viking Lore & Art</a>
-             <div class="deployableContent">
-              <a href="fineart.html">Fine Art</a>
-              <a href="allthing.html">Allthing Lore</a>
-            </div>
-          </li>
-          <li><a href="rpgs.html">RPGs</a></li>
-        </ul>
-      </nav>
-      <form id="searchMenu" action="/action_page.php" method="get">
-        <input class="submitButton" type="text" placeholder="Search.." name="search" />
-        <button class="submitButton" type="submit">Submit</button>
-      </form>
-    </div>
-  </header>
-  <main>
-   <div class="wrapper">      
-      <img id="imgHeaderBars" src="images/headerBars.png" alt="Bars" />
-      <h2 class="animated">Our recommended list</h2>
-      <div class="barList">
-        <figure>
-          <a href="https://valhallayork.com/"><img src="images/valhallaBar.png" alt="bar logo" /></a>
-          <figcaption>York, United Kingdom</figcaption>
-        </figure>
-        <figure>
-          <a href="https://mjolner.com.au/"><img src="images/mjolnerBarLogo.png" alt="bar logo" /></a>
-          <figcaption>
-            Sydney and Melbourne, Australia
-          </figcaption>
-        </figure>
-        <figure>
-          <a href="https://www.facebook.com/valhallabarvikingo"><img src="images/valhallaBarVikingoBA.png"
-              alt="bar logo" /></a>
-          <figcaption>Buenos Aires, Argentina</figcaption>
-        </figure>
-        <figure>
-          <a href="https://www.facebook.com/Vinabodtapasbar/"><img src="images/vinabodTapasBar.jpg" alt="bar logo" /></a>
-          <figcaption >London, United Kingdom</figcaption>
-        </figure>
-        <figure>
-          <a href="https://www.yelp.com/biz_photos/skol-des-moines"><img src="images/skolBar.jpg" alt="bar logo" /></a>
-          <figcaption>
-            San Francisco, United States
-          </figcaption>
-        </figure>
+    </header>
+    <main>
+      <div class="wrapper">
+        <img id="imgHeaderBars" src="images/headerBars.png" alt="Food and drink header!" />
+        <h2 class="animated">Our recommended list</h2>
+        <div class="barList">
+          <figure>
+            <a href="https://valhallayork.com/"
+              ><img src="images/valhallaBar.png" alt="Valhalla York bar logo"
+            /></a>
+            <figcaption>York, United Kingdom</figcaption>
+          </figure>
+          <figure>
+            <a href="https://mjolner.com.au/"
+              ><img src="images/mjolnerBarLogo.png" alt="Mjolner AU bar logo"
+            /></a>
+            <figcaption>Sydney and Melbourne, Australia</figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.facebook.com/valhallabarvikingo"
+              ><img src="images/valhallaBarVikingoBA.png" alt="Vallhala BA bar logo"
+            /></a>
+            <figcaption>Buenos Aires, Argentina</figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.facebook.com/Vinabodtapasbar/"
+              ><img src="images/vinabodTapasBar.jpg" alt="Vinabod Tapas bar logo"
+            /></a>
+            <figcaption>London, United Kingdom</figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.yelp.com/biz_photos/skol-des-moines"
+              ><img src="images/skolBar.jpg" alt="Skol bar logo"
+            /></a>
+            <figcaption>San Francisco, United States</figcaption>
+          </figure>
+        </div>
       </div>
-   </div>
-  </main>
-  <footer>
-    <ul class="nav_bar">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li class="btn--twitter"><a href="">Twitter</a></li>
-      <li class="btn--pinterest"><a href="">Pinterest</a></li>
-      <li class="btn--instagram"><a href="">Instagram</a></li>
-      <li class="btn--steam">
-        <a href="https://store.steampowered.com/search/?term=viking">Viking Games</a>
-      </li>
-      <li class="btn--facebook"><a href="">Facebook</a></li>
-    </ul>
-    <div class="copyrightStatement">Copyright 2021 © Lucas Nicolussi</div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-
+    </main>
+    <footer>
+      <ul class="nav_bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="btn--twitter"><a href="">Twitter</a></li>
+        <li class="btn--pinterest"><a href="">Pinterest</a></li>
+        <li class="btn--instagram"><a href="">Instagram</a></li>
+        <li class="btn--steam">
+          <a href="https://store.steampowered.com/search/?term=viking"
+            >Viking Games</a
+          >
+        </li>
+        <li class="btn--facebook"><a href="">Facebook</a></li>
+      </ul>
+      <div class="copyrightStatement">Copyright 2021 © Lucas Nicolussi</div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-nodemodules/
+node_modules/
 *.7z
 *.dmg
 *.gz
