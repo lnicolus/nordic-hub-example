@@ -7,6 +7,14 @@ $p-font-family: 'Sawarabi Mincho', monospace, sans-serif;
 $font-color-primary:ghostwhite;
 $font-color-secondary: black;
 $night-mode-color:black;
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: $font-color-primary;
+  }
 @import "queries.scss";
 
 * {
@@ -24,43 +32,31 @@ body {
 	overflow-y: scroll;	
 	overflow-x: hidden;
 }
-header {
-	background-color: $secondary-color;
-	min-width: 100vw;
-	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	font-size: 1rem;	
-	* {
+header * {
 		color: $font-color-primary;
 		padding: 5px;
 		text-decoration: none;
 	}
-}
+
 .headerWrapper {
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-	align-items: baseline;
-	background-color: $secondary-color;	
-}
+	@include flex-center;
+	background-color: $secondary-color;
+	min-width: 100vw;	
+	font-size: 1rem;
+} 
+
 .logo {
 	border-radius: 30%;
 }
 .headerNavbar {
-	display: flex;
-	align-content: center;
-	align-items: center;
-	color: $font-color-primary;
-	text-decoration: none;
+	@include flex-center;
 	li {
 		font-family: $font-family;
 		list-style-type: none;
 		color: $font-color-primary;
 		text-decoration: none;
 	}
-}
+} 
 .nav_bar {
 	text-decoration: none;
 	color: $font-color-primary;
@@ -212,13 +208,6 @@ p {
 	height: 70px;
 	border-radius: 50%;
 }
-#barOne {
-	width: 35%;
-}
-#barTwo {
-	width: 50%;
-	height: 275px;
-}
 .news {
 	margin-bottom: 10%;
     img {
@@ -228,10 +217,7 @@ p {
     margin-right: 1%;
     }
 }
-.gridBook {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
+
 #runeList {
 	ul {
 		li {
@@ -269,9 +255,7 @@ p {
 	}
 	margin: 2.5%;
 }
-#seeMoreBooks {
-	margin-bottom: 2.5%;
-}
+
 figure {
 	img {
 		border: 1px solid gold;
@@ -291,15 +275,6 @@ figure {
 	align-content: center;
 	figure {
 		margin-top: 10px;
-	}
-}
-.flexFa {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	img {
-		margin: auto;
-		max-width: 90vw;
 	}
 }
 .fieldset {

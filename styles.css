@@ -1,5 +1,5 @@
-/*Alumno: Lucas Nicolussi; Profesor: Darío Ceballos; Tutor: Gonzalo Manoukian-->*/
 @charset "UTF-8";
+/*Alumno: Lucas Nicolussi; Profesor: Darío Ceballos; Tutor: Gonzalo Manoukian-->*/
 @media (min-width: 280px) and (max-width: 640px) {
   html {
     font-size: 13px; }
@@ -169,35 +169,32 @@ body {
   overflow-y: scroll;
   overflow-x: hidden; }
 
-header {
-  background-color: #333333;
-  min-width: 100vw;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  font-size: 1rem; }
-  header * {
-    color: ghostwhite;
-    padding: 5px;
-    text-decoration: none; }
+header * {
+  color: ghostwhite;
+  padding: 5px;
+  text-decoration: none; }
 
 .headerWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
-  align-items: baseline;
-  background-color: #333333; }
+  align-items: center;
+  text-decoration: none;
+  color: ghostwhite;
+  background-color: #333333;
+  min-width: 100vw;
+  font-size: 1rem; }
 
 .logo {
   border-radius: 30%; }
 
 .headerNavbar {
   display: flex;
+  justify-content: center;
   align-content: center;
   align-items: center;
-  color: ghostwhite;
-  text-decoration: none; }
+  text-decoration: none;
+  color: ghostwhite; }
   .headerNavbar li {
     font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
     list-style-type: none;
@@ -340,13 +337,6 @@ p {
   height: 70px;
   border-radius: 50%; }
 
-#barOne {
-  width: 35%; }
-
-#barTwo {
-  width: 50%;
-  height: 275px; }
-
 .news {
   margin-bottom: 10%; }
   .news img {
@@ -354,10 +344,6 @@ p {
     width: 40%;
     max-height: 40vh;
     margin-right: 1%; }
-
-.gridBook {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
 
 #runeList {
   display: flex;
@@ -389,9 +375,6 @@ p {
     text-decoration: none;
     color: black; }
 
-#seeMoreBooks {
-  margin-bottom: 2.5%; }
-
 figure img {
   border: 1px solid gold; }
 
@@ -409,14 +392,6 @@ figure figcaption {
   align-content: center; }
   .barList figure {
     margin-top: 10px; }
-
-.flexFa {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-  .flexFa img {
-    margin: auto;
-    max-width: 90vw; }
 
 .fieldset {
   display: flex;
@@ -473,22 +448,6 @@ figure figcaption {
 .btn--facebook a:hover {
   background-color: mediumblue;
   transition: all .8s; }
-
-.imgSize-1 {
-  width: 150px;
-  height: 150px; }
-
-.imgSize-2 {
-  width: 300px;
-  height: 300px; }
-
-.imgSize-3 {
-  width: 450px;
-  height: 450px; }
-
-.imgSize-4 {
-  width: 600px;
-  height: 600px; }
 
 .label {
   margin-bottom: 2%; }
