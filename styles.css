@@ -1,5 +1,5 @@
-@charset "UTF-8";
 /*Alumno: Lucas Nicolussi; Profesor: Darío Ceballos; Tutor: Gonzalo Manoukian-->*/
+@charset "UTF-8";
 @media (min-width: 280px) and (max-width: 640px) {
   html {
     font-size: 13px; }
@@ -453,84 +453,6 @@ figure figcaption {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start; }
-
-.main-background {
-  background-color: #FBFAFA;
-  text-align: center; }
-  .main-background .main-background__header {
-    background-color: #333333; }
-  .main-background .main-background__headerWrapper {
-    background-color: #333333;
-    color: ghostwhite;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: baseline; }
-  .main-background .main-background__title {
-    background-color: #FBFAFA;
-    color: black; }
-  .main-background .main-background__subtitle {
-    background-color: #333333;
-    color: ghostwhite; }
-  .main-background .main-background__p {
-    color: black; }
-  .main-background .main-background__p-center {
-    text-align: center; }
-  .main-background figure figcaption {
-    color: black; }
-  .main-background .main-background__footer {
-    background-color: #333333; }
-
-.main--backgroundBlack {
-  background-color: black;
-  text-align: center; }
-  .main--backgroundBlack .main--backgroundBlack__header {
-    background-color: black; }
-  .main--backgroundBlack .main--backgroundBlack__headerWrapper {
-    background-color: black;
-    color: ghostwhite;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: baseline; }
-  .main--backgroundBlack .main--backgroundBlack__header__deployableContent {
-    display: none;
-    position: absolute;
-    background-color: #333333;
-    min-width: 160px;
-    z-index: 1; }
-    .main--backgroundBlack .main--backgroundBlack__header__deployableContent:hover .deployableMenu {
-      background-color: darkred;
-      transition: all .8s; }
-    .main--backgroundBlack .main--backgroundBlack__header__deployableContent a {
-      color: ghostwhite;
-      font-size: 18px;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left; }
-  .main--backgroundBlack .deployableMenu:hover .deployableContent {
-    display: block;
-    transition: all .8s; }
-  .main--backgroundBlack .main--backgroundBlack__title {
-    background-color: black;
-    color: ghostwhite;
-    border: solid 1px ghostwhite; }
-  .main--backgroundBlack .main--backgroundBlack__subtitle {
-    background-color: black;
-    color: ghostwhite;
-    border: solid 1px ghostwhite; }
-  .main--backgroundBlack .main--backgroundBlack__p {
-    color: ghostwhite; }
-  .main--backgroundBlack .main--backgroundBlack__p-center {
-    text-align: center; }
-  .main--backgroundBlack figure figcaption {
-    color: ghostwhite; }
-  .main--backgroundBlack .main--backgroundBlack__footer {
-    background-color: black;
-    border-top: solid 1px ghostwhite; }
-  .main--backgroundBlack #nightCarousel {
-    background-color: black; }
 
 .btn--twitter a:hover {
   background-color: dodgerblue;
