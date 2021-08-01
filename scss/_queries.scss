@@ -55,7 +55,7 @@
 	h2 {
 		font-size: 1.9rem;
 	}
-	#goRaiding {
+	.goRaiding {
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
@@ -73,10 +73,7 @@
 	  }
 	.news {
 		img {
-		float: left;		
-		max-height: 70vh;
-		margin-right: 1%;
-		min-width: 70vw;
+			display: none;
 		}
 	}
 	  

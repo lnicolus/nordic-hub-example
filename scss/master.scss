@@ -15,7 +15,6 @@ $night-mode-color:black;
 	text-decoration: none;
 	color: $font-color-primary;
   }
-@import "queries.scss";
 
 * {
 	margin: 0;
@@ -342,3 +341,4 @@ $socialMediaHoverColors: (twitter:dodgerblue, pinterest:red, instagram:darkviole
 .alignCenter {
 	text-align: center;
 }
+@import "queries.scss";
