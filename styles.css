@@ -8,6 +8,10 @@
 a {
   text-decoration: none; }
 
+article {
+  margin-bottom: 5%;
+}
+
 body {
   text-align: center;
   background-color: #FBFAFA;
@@ -71,7 +75,8 @@ header * {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-bottom: 2%; }
 
 h1 {
   font-size: 2.9rem;
@@ -121,7 +126,8 @@ footer {
     text-decoration: none; }
 
 textarea {
-  resize: none; }
+  resize: none;
+  max-width: 80%; }
 
 .wrapper {
   max-width: 70%;
@@ -170,8 +176,7 @@ p {
   float: left; }
 
 .button {
-  padding: 0px;
-  margin: 0px;
+  padding: 0px;  
   border-radius: 50%;
   border-color: transparent;
   display: block;
@@ -349,9 +354,14 @@ figure figcaption {
     max-width: 80%;
     height: 40vh; }
   .zoom:active {
-    transform: scale(2); }
+    transform: none; }
   .news img {
     display: none; } }
+
+  .deployableContent a {
+    font-size: inherit;
+    padding: 4px 6px;
+    }
 
 @media (min-width: 641px) and (max-width: 720px) {
   html {
@@ -395,12 +405,16 @@ figure figcaption {
   #offersCarousel {
     max-height: 50vh; }
   .zoom:active {
-    transform: scale(2); }
+    transform: none; }
   .news img {
     float: left;
     max-height: 60vh;
     margin-right: 1%;
-    min-width: 50vw; } }
+    min-width: 50vw; }
+    .deployableContent a {
+    font-size: inherit;
+    padding: 7px 9px;
+    } }
 
 @media (min-width: 721px) and (max-width: 869px) {
   html {
@@ -415,7 +429,7 @@ figure figcaption {
     margin-right: 1%;
     min-width: 50vw; }
   .zoom:active {
-    transform: scale(1.5); } }
+    transform: none; }
 
 @media only screen and (min-width: 1200px) {
   .rpgMain__article {
