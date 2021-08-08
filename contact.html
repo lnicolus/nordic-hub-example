@@ -73,39 +73,55 @@
     </div>
   </header>
   <main>
-    <div class="wrapper">
-      <form class="p-4 border rounded-3 bg-light contactForm" action="">
-        <h1 class="display-4 fw-bold lh-1 mb-3">Contact Us</h1>
-        <fieldset class="fieldset">
-          <label for="name">Name:</label>
-          <input type="text" name="name" required>
-          <label for="company">Company:</label>
-          <input type="text" name="company">
-          <label for="email">Email:</label>
-          <input type="email" name="email" required>
-          <textarea name="comentarios" cols="40" rows="5" placeholder="type your message.." required></textarea><br>
-          <h3>Help us by stating your preference</h4>
-          <p>You are most interested in:</p>
-          <select name="interest">
-            <option value="1">Viking Lore & Art</option>
-            <option value="2">Jewelry</option>
-            <option value="3">Clothing</option>
-            <option value="4">Business</option>
-            <option value="5">Locations & Events</option>
-            <option value="6">Roleplaying games</option>
-            <option value="7">Books and E-books</option>
-          </select> <br>
-          <label class="label" for="newsletter">Check if you wish to subscribe to our Newsletter!<input id="newsletter" type="checkbox"
-              name="chequeo" value="1"></label>
-          <fieldset>
-            <input class="btn btn-lg btn-primary" type="submit" value="Send">
-            <input class="btn btn-lg btn-primary" type="reset" value="Reset Fields">
-            <hr class="my-4">
-            <small class="text-muted">By clicking Send, you agree to the terms of use.</small>
-          </fieldset>
-        </fieldset>
-      </form>
-    </div>    
+      <div class="wrapperContact">      
+            <div>
+              <form class="p-4 border rounded-3 bg-light" action="">
+                <h1 class="display-4 fw-bold lh-1 mb-3">Contact Us</h1>
+                <fieldset class="fieldset">
+                  <label for="name">Name:</label>
+                  <input placeholder="*Required" type="text" id="name" name="name" required>
+                  <label for="company">Company:</label>
+                  <input type="text" id="company" name="company">
+                  <label  for="email">Email:</label>
+                  <input placeholder="*Required" type="email" id="email" name="email" required>
+                  <textarea name="comentarios" cols="40" rows="5" placeholder=" type your message.." required></textarea><br>
+                  <h3>Help us by stating your preference</h4>
+                  <p>You are most interested in:</p>
+                  <select name="interest">
+                    <option value="1">Viking Lore & Art</option>
+                    <option value="2">Jewelry</option>
+                    <option value="3">Clothing</option>
+                    <option value="4">Business</option>
+                    <option value="5">Locations & Events</option>
+                    <option value="6">Roleplaying games</option>
+                    <option value="7">Books and E-books</option>
+                  </select> <br>
+                  <label class="required" class="label" for="newsletter">Check if you wish to subscribe to our Newsletter!<input id="newsletter" type="checkbox"
+                      name="chequeo" value="1"></label>
+                  <fieldset>
+                    <div class="submitContact">
+                      <input class="btn btn-primary" type="submit" value="Send">
+                      <input class="btn btn-primary" type="reset" value="Reset Fields">
+                    </div>
+                    <hr class="my-4">
+                    <small class="text-muted">By clicking Send, you agree to the terms of use.</small>
+                  </fieldset>
+                </fieldset>
+              </form>      
+            </div>
+            <div>
+              <img src="images/ogBarsContact.webp" alt="vikings cheering" loading="lazy">
+            </div>
+            <div>
+              <h1>Join the best norse fandom hub in the world</h1>
+              <p>In this age of dispersed information where everyone has something to say, a point of reference,
+                  a lighthouse is needed. Here, all norse fans can quickly and surely find the latest and very best 
+                  of events, places, reenactments, products, books, and everything you can desire.
+                  Join a hub where norse dreams become possible, join the people who share the same love 
+                  and show the world what you can do! 
+              </p>
+            </div>               
+      </div>
   </main>
   <footer>
     <ul class="nav_bar">
