@@ -164,7 +164,7 @@ textarea {
 }
 
 .wrapperContact {
-  max-width: 85%;
+  max-width: 70%;
   min-height: 78vh;
   margin: auto;  
   overflow: visible;
@@ -570,7 +570,7 @@ input::placeholder, textarea::placeholder {
     padding: 7px 9px;
   }
   .wrapperContact {
-    max-width: 90%;
+    max-width: 80%;
     min-height: 78vh;
     margin: auto;  
     overflow: visible;
@@ -606,7 +606,7 @@ input::placeholder, textarea::placeholder {
     transform: none;
   }
   .wrapperContact {
-    max-width: 90%;
+    max-width: 50%;
     min-height: 78vh;
     margin: auto;  
     overflow: visible;
