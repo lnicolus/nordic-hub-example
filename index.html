@@ -1,16 +1,16 @@
 <!--Alumno: Lucas Nicolussi; Profesor: Darío Ceballos; Tutor: Gonzalo Manoukian-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>   
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>All Viking - Home</title>
-    <link rel="preload" href="css/bootstrap.css" as="style"/>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Sawarabi+Mincho&display=swap" rel="stylesheet" rel="preload" as="style"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>      
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icons/vikingship.webp" type="image favicon">    
     <meta name="keywords" content="viking, vikings, fandom, viking art, viking bar, viking products, viking roleplay"/>
     <link rel="shortcut icon" href="icons/vikingship.webp" type="image favicon"/>
     <meta name="description" content="Find the best viking fandom content, products, art and cultural spots worldwide"/>
@@ -32,15 +32,19 @@
   </head>
   <body>
     <header>
-      <div class="headerWrapper" id="gridMenu">
-        <div id="headerLogo">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <div class="headerWrapper">
+        <div id="headerLogo" class="navbar-brand">
           <a href="index.html">
             <img src="images/logo.webp" alt="logo" class="shadowPop logo"/>
           </a>
-        </div>
-        <nav id="headerNavbar">
-          <ul class="headerNavbar">
-            <li><a href="index.html">Home</a></li>
+        </div>     
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsCollapse" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarsCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li><a href="index.html">Home</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="products.html">Browse Products</a></li>
             <li class="deployableMenu">
@@ -61,17 +65,15 @@
               </div>
             </li>
             <li><a href="rpgs.html">RPGs</a></li>
-          </ul>
-        </nav>
-        <form id="searchMenu" action="/action_page.php" method="get">
-          <input
-            class="submitButton"
-            type="text"
-            placeholder="Search.."
-            name="search"/>
-          <button class="submitButton" type="submit">Submit</button>
-        </form>
+        </ul>
+        </div>
+        <div>
+          <form>
+            <input class="form-control" type="text" placeholder="Search">
+         </form>
+      </div>      
       </div>
+      </nav>
     </header>
     <main>
       <div class="wrapper">
@@ -158,7 +160,7 @@
         </section>
 
         <section class="indexSection">
-          <h2 class="animated">All Viking is launched!</h2>
+          <h2>All Viking is launched!</h2>
           <img
             src="images/odinsCrows.webp"
             alt="Odin Crows art with runes"
@@ -195,8 +197,8 @@
             <img src="icons/vikingship.webp" alt="icon" class="goRaiding"/>
           </a>
         </button>
-        <section class="indexSection">
-          <h2 class="animated">
+        <section>
+          <h2>
             Go Raiding: Find all the gathering places for fans!
           </h2>
           <p class="alignCenter">
@@ -216,8 +218,8 @@
             </a>
           </button>
         </section>
-        <section class="indexSection">
-          <h2 class="animated">Viking Lore Highlights</h2>
+        <section>
+          <h2>Viking Lore Highlights</h2>
           <p class="alignCenter">
             Odin indeed hung himself from a tree to gain knowledge. You just
             click!

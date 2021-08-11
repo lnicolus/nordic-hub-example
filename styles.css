@@ -8,10 +8,11 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 article {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 article picture img {
@@ -26,10 +27,18 @@ body {
   overflow-x: hidden;
 }
 
-header * {
+header, .headerWrapper, .headerWrapper div, 
+.headerWrapper li, 
+.headerWrapper button, .headerWrapper a  {
   color: ghostwhite;
   padding: 5px;
   text-decoration: none;
+  background-color: #333333;
+  line-height: 1.4;
+}
+
+.headerWrapper ul li {
+  padding: 5px;
 }
 
 .headerWrapper {
@@ -38,10 +47,15 @@ header * {
   align-content: center;
   align-items: center;
   text-decoration: none;
-  color: ghostwhite;
-  background-color: #333333;
-  min-width: 100vw;
+  margin: auto;
   font-size: 1rem;
+  color: ghostwhite;
+  padding: 5px;
+}
+
+.indexSection p {
+  text-indent: 3%;
+  margin-bottom: 1%;
 }
 
 .logo {
@@ -57,15 +71,10 @@ header * {
   color: ghostwhite;
 }
 .headerNavbar li {
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  font-family: "EB Garamond", "Gentium Book Basic", serif;
   list-style-type: none;
   color: ghostwhite;
   text-decoration: none;
-}
-
-.nav_bar {
-  text-decoration: none;
-  color: ghostwhite;
 }
 
 .callToAct {
@@ -75,20 +84,16 @@ header * {
 .callToAct a {
   text-decoration: none;
   color: ghostwhite;
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  font-family: "EB Garamond", "Gentium Book Basic", serif;
 }
 
 #artGallery {
   max-width: 90%;
   margin: auto;
-  overflow: hidden;
+  
 }
-#artGallery h1 {
-  width: 90vw;
-}
-#artGallery h2 {
-  width: 90vw;
-}
+#artGallery h1, #artGallery h2  {
+  width: 90vw;}
 
 .barsIndexCall {
   display: flex;
@@ -98,62 +103,60 @@ header * {
   margin-bottom: 2%;
 }
 
-h1 {
-  font-size: 2.9rem;
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
-  overflow: hidden;
+h1, h2 {
+  font-size: 2.9rem;   
 }
 
 h2 {
-  font-size: 2.9rem;
   color: ghostwhite;
   background-color: #333333;
   margin-top: 1%;
-  margin-bottom: 1%;
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
-  overflow: hidden;
+  margin-bottom: 1%;   
+}
+
+h1, h2, h4, h5 {
+  
+  font-family: "EB Garamond", "Gentium Book Basic", serif;
 }
 
 h4 {
-  font-size: 1rem;
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
-  overflow: hidden;
-}
-
-h5 {
-  overflow: hidden;
+  font-size: 1rem; 
 }
 
 section {
-  overflow: hidden;
+  
 }
 
-ul {
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+ul, li {
+  font-family: "EB Garamond", "Gentium Book Basic", serif;
 }
 
-li {
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
-}
 li a:hover {
   background-color: darkred;
   transition: all 0.8s;
 }
 
 .copyrightStatement {
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  font-family: "EB Garamond", "Gentium Book Basic", serif;
   display: block;
+  text-decoration: none;
+  color: ghostwhite;  
+  padding: 5px;
 }
 
 footer {
   background-color: #333333;
   margin-top: 1%;
 }
-footer * {
+
+.nav_bar, .nav_bar li {
+  text-decoration: none;  
   display: inline-block;
-  color: ghostwhite;
   padding: 5px;
-  text-decoration: none;
+}
+
+.nav_bar li a {
+  color: ghostwhite;
 }
 
 textarea {
@@ -181,9 +184,9 @@ textarea {
 }
 
 p {
-  font-family: "Sawarabi Mincho", monospace, sans-serif;
+  font-family: "EB Garamond", "Sawarabi Mincho", monospace, serif;
   text-align: left;
-  font-weight: 550;
+  font-size: 21px;
   line-height: 175%;
 }
 
@@ -192,14 +195,14 @@ p {
 }
 
 #searchMenu {
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  font-family: "EB Garamond", "Gentium Book Basic", serif;
 }
 
 .deployableContent {
   display: none;
   position: absolute;
   background-color: #333333;
-  min-width: 160px;
+  min-width: 160px;  
   z-index: 1;
 }
 .deployableContent:hover .deployableMenu {
@@ -304,7 +307,7 @@ figure figcaption {
   font-style: italic;
   font-size: 1.25rem;
   width: 100%;
-  font-family: "Goudy Bookletter 1911", "Gentium Book Basic", sans-serif;
+  font-family: "EB Garamond", "Gentium Book Basic", serif;
 }
 
 .barList {
@@ -404,6 +407,7 @@ figure figcaption {
 
 .alignCenter {
   text-align: center;
+  margin-bottom: 1%;
 }
 
 input::placeholder, textarea::placeholder {
@@ -415,22 +419,19 @@ input::placeholder, textarea::placeholder {
   color: black;
 }
 
-.deployableContent a {
-  font-size: inherit;
-  padding: 4px 6px;}
-
 @media (min-width: 280px) and (max-width: 640px) {
-  html {
+  html, p {
     font-size: 13px;
   }
   .headerWrapper {
     flex-direction: column;
   }
-  .headerNavbar {
-    flex-direction: column;
+ #headerLogo img {
+    margin-left: 12%;
   }
   .barsIndexCall a img {
     max-width: 100%;
+    max-height: 40vh;
   }
   .barList a img {
     max-width: 100%;
@@ -438,26 +439,7 @@ input::placeholder, textarea::placeholder {
   #imgHeaderBars {
     max-width: 100%;
   }
-  #gridMenu {
-    display: grid;
-    grid-template-areas: "headerLogo headerNavbar headerNavbar" "headerLogo headerNavbar headerNavbar" "searchMenu searchMenu searchMenu";
-    align-items: center;
-  }
-  #headerLogo {
-    grid-area: headerLogo;
-  }
-  #headerNavbar {
-    grid-area: headerNavbar;
-  }
-  #searchMenu {
-    grid-area: searchMenu;
-  }
-  main {
-    min-width: 90vw;
-    max-width: 90vw;
-    margin: auto;
-  }
-  .wrapper {
+  .wrapper, main {
     min-width: 90vw;
     max-width: 90vw;
     margin: auto;
@@ -503,10 +485,14 @@ input::placeholder, textarea::placeholder {
   .wrapperContact img {
   max-width: 90vw; 
   }
+
+  .deployableContent a {
+  font-size: inherit;
+  padding: 4px 6px;}
 }
 
 @media (min-width: 641px) and (max-width: 720px) {
-  html {
+  html, p {
     font-size: 15px;
   }
   .headerWrapper {
@@ -524,29 +510,8 @@ input::placeholder, textarea::placeholder {
   #imgHeaderBars {
     max-width: 100%;
   }
-  #gridMenu {
-    display: grid;
-    grid-template-areas: "headerLogo" "headerNavbar" "searchMenu";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 30vh;
-  }
-  #headerLogo {
-    grid-area: headerLogo;
-  }
-  #headerNavbar {
-    grid-area: headerNavbar;
-  }
-  #searchMenu {
-    grid-area: searchMenu;
-  }
-  main {
+  main, .wrapper {
     min-width: 50vw;
-    max-width: 90vw;
-    margin: auto;
-  }
-  .wrapper {
-    min-width: 90vw;
     max-width: 90vw;
     margin: auto;
   }
