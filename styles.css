@@ -267,7 +267,7 @@ p {
   align-content: center;
 }
 #runeList ul li {
-  list-style-image: url(icons/norseIcon.webp);
+  list-style-image: url(icons/norsIcon.webp);
   font-size: 1.25rem;
 }
 #runeList ul ul {
