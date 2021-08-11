@@ -3,7 +3,7 @@ _Its a site for norse fans who, instead of surfing through numerous sites can fi
  The website theoretically would sustain itself from advertising paid by those who offer these wonderful products and services._
 
 ## Warning 🛠️
-_None of the image resources used in this project are my own. This site is non-profit and its sole purpose is academic and for showing coding-skills to teachers and potential employers. They belong to their authors. Appropiate links under each copyrighted image._
+_None of the image resources used in this project are my own. This site is non-profit and its sole purpose is academic and for showing coding-skills to teachers and potential employers. They belong to their authors. Appropiate links under o appropiately near each copyrighted image._
 
 ### What was used making this site⌨️
 _Besides the obvious (HTML, CSS), Boostrap elements have been included, the wonderful SASS was used extensively, however, the main ingredient / method has been ❤️ for norse, as the author itself is a fan! 
